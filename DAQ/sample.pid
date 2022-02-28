@@ -1,0 +1,24 @@
+# adc caras trapezoid channel:TRAPEZ_1
+1:TRAPEZ_SPECTRO:TRAPEZ_1
+# adc caras trapezoid channel:TRAPEZ_2
+2:TRAPEZ_SPECTRO:TRAPEZ_2
+# adc caras channel:CRRC4_1
+3:CRRC4_SPECTRO:CRRC4_1
+# adc caras channel:CRRC4_2
+4:CRRC4_SPECTRO:CRRC4_2
+# adc mosahr channel trapezoid:TRAPEZ_3
+5:TRAPEZ_SPECTRO:TRAPEZ_3
+# adc mosahr channel trapezoid:TRAPEZ_4
+6:TRAPEZ_SPECTRO:TRAPEZ_4
+# adc mosahr channel trapezoid:TRAPEZ_5
+7:TRAPEZ_SPECTRO:TRAPEZ_5
+# adc mosahr channel trapezoid:TRAPEZ_6
+8:TRAPEZ_SPECTRO:TRAPEZ_6
+# adc mosahr channel CRRC4:CRRC4_3
+9:CRRC4_SPECTRO:CRRC4_3
+# adc mosahr channel CRRC4:CRRC4_4
+10:CRRC4_SPECTRO:CRRC4_4
+# adc mosahr channel CRRC4:CRRC4_5
+11:CRRC4_SPECTRO:CRRC4_5
+# adc mosahr channel CRRC4:CRRC4_6
+12:CRRC4_SPECTRO:CRRC4_6

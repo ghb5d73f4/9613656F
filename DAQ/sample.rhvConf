@@ -1,0 +1,158 @@
+//==========================================================
+// List of Page Layouts
+//==========================================================
+//----------------------------------------------------------
+// Layout "H1L3" 
+//----------------------------------------------------------
+FPageLayout;H1L3;1 pad on the upper row and 3 in the lower row;4
+1;TPad;Pad_1;Pad number 1
+0.0001;0.5001;0.9999;0.9999
+2;TPad;Pad_2;Pad number 2
+0.0010998;0.0005998;0.332367;0.4994
+3;TPad;Pad_3;Pad number 3
+0.334366;0.0005998;0.665634;0.4994
+4;TPad;Pad_4;Pad number 4
+0.667633;0.0005998;0.9989;0.4994
+//----------------------------------------------------------
+// Layout "X2Y3" 
+//----------------------------------------------------------
+FPageLayout;X2Y3;2 columns 3 lines;6
+1;TPad;Pad_1;Pad number 1
+0.0001;0.666767;0.4999;0.9999
+2;TPad;Pad_2;Pad number 2
+0.5001;0.666767;0.9999;0.9999
+3;TPad;Pad_3;Pad number 3
+0.0001;0.333433;0.4999;0.666567
+4;TPad;Pad_4;Pad number 4
+0.5001;0.333433;0.9999;0.666567
+5;TPad;Pad_5;Pad number 5
+0.0001;0.0001;0.4999;0.333233
+6;TPad;Pad_6;Pad number 6
+0.5001;0.0001;0.9999;0.333233
+//----------------------------------------------------------
+// Layout "OnePad" 
+//----------------------------------------------------------
+FPageLayout;OnePad;One pad only;1
+1;TCanvas;Pad_1;Pad number 1
+0;0;1;1
+//----------------------------------------------------------
+// Layout "X2Y2" 
+//----------------------------------------------------------
+FPageLayout;X2Y2;2 columns 2 lines;4
+1;TPad;Pad_1;Pad number 1
+0;0.5;0.5;1
+2;TPad;Pad_2;Pad number 2
+0.5;0.5;1;1
+3;TPad;Pad_3;Pad number 3
+0;0;0.5;0.5
+4;TPad;Pad_4;Pad number 4
+0.5;0;1;0.5
+//----------------------------------------------------------
+// Layout "X2Y1" 
+//----------------------------------------------------------
+FPageLayout;X2Y1;Layout from canvas "Editor".;2
+1;TPad;Pad_1;Pad number 1
+0.01;0.01;0.49;0.99
+2;TPad;Pad_2;Pad number 2
+0.51;0.01;0.99;0.99
+//----------------------------------------------------------
+// Layout "X1Y2" 
+//----------------------------------------------------------
+FPageLayout;X1Y2;1 column 2 lines;2
+1;TPad;Pad_1;Pad number 1
+0;0.5;1;1
+2;TPad;Pad_2;Pad number 2
+0;0;1;0.5
+//----------------------------------------------------------
+// Layout "L1R2" 
+//----------------------------------------------------------
+FPageLayout;L1R2;Layout from canvas "Libre".;3
+1;TPad;Pad_1;Pad number 1
+0;0;0.5;1
+2;TPad;Pad_2;Pad number 2
+0.5;0.5;1;1
+3;TPad;Pad_3;Pad number 3
+0.5;0;1;0.5
+//----------------------------------------------------------
+// Layout "H1L2" 
+//----------------------------------------------------------
+FPageLayout;H1L2;Layout from canvas "Libre".;3
+1;TPad;Pad_1;Pad number 1
+0.00879397;0.493289;0.98995;0.991611
+2;TPad;Pad_2;Pad number 2
+0.0188442;0.0151007;0.494975;0.486577
+3;TPad;Pad_3;Pad number 3
+0.497487;0.0151007;0.979899;0.486577
+//==========================================================
+// List of Booklets
+//==========================================================
+//----------------------------------------------------------
+// Booklet ALL_COUNTERS
+//----------------------------------------------------------
+FBooklet;ALL_COUNTERS;Booklet from RHV Editor.;1
+FPage;ALL;ALL from canvas Editor;OnePad;1
+1;ALL_COUNTERS_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+//----------------------------------------------------------
+// Booklet "caras_trapez"
+//----------------------------------------------------------
+FBooklet;caras_trapez;Booklet from caras_trapez Editor.;2
+FPage;TRAPEZ_1;TRAPEZ_1 from canvas Editor;H1L2;3
+1;TRAPEZ_1_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;TRAPEZ_1_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;TRAPEZ_1_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+FPage;TRAPEZ_2;TRAPEZ_2 from canvas Editor;H1L2;3
+1;TRAPEZ_2_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;TRAPEZ_2_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;TRAPEZ_2_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+//----------------------------------------------------------
+// Booklet "mosahr_trapez"
+//----------------------------------------------------------
+FBooklet;mosahr_trapez;Booklet from mosahr_trapez Editor.;4
+FPage;TRAPEZ_3;TRAPEZ_3 from canvas Editor;H1L2;3
+1;TRAPEZ_3_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;TRAPEZ_3_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;TRAPEZ_3_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+FPage;TRAPEZ_4;TRAPEZ_4 from canvas Editor;H1L2;3
+1;TRAPEZ_4_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;TRAPEZ_4_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;TRAPEZ_4_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+FPage;TRAPEZ_5;TRAPEZ_5 from canvas Editor;H1L2;3
+1;TRAPEZ_5_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;TRAPEZ_5_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;TRAPEZ_5_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+FPage;TRAPEZ_6;TRAPEZ_6 from canvas Editor;H1L2;3
+1;TRAPEZ_6_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;TRAPEZ_6_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;TRAPEZ_6_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+//----------------------------------------------------------
+// Booklet "mosahr_crrc4"
+//----------------------------------------------------------
+FBooklet;mosahr_crrc4;Booklet from mosahr_crrc4 Editor.;4
+FPage;CRRC4_3;CRRC4_3 from canvas Editor;H1L2;3
+1;CRRC4_3_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;CRRC4_3_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;CRRC4_3_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+FPage;CRRC4_4;CRRC4_4 from canvas Editor;H1L2;3
+1;CRRC4_4_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;CRRC4_4_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;CRRC4_4_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+FPage;CRRC4_5;CRRC4_5 from canvas Editor;H1L2;3
+1;CRRC4_5_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;CRRC4_5_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;CRRC4_5_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+FPage;CRRC4_6;CRRC4_6 from canvas Editor;H1L2;3
+1;CRRC4_6_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;CRRC4_6_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;CRRC4_6_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+//----------------------------------------------------------
+// Booklet "caras_crrc4"
+//----------------------------------------------------------
+FBooklet;caras_crrc4;Booklet from caras_crrc4 Editor.;2
+FPage;CRRC4_1;CRRC4_1 from canvas Editor;H1L2;3
+1;CRRC4_1_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;CRRC4_1_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;CRRC4_1_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001
+FPage;CRRC4_2;CRRC4_2 from canvas Editor;H1L2;3
+1;CRRC4_2_SPECTRO_GRAPH/LineColor=602,FillColor=0,FillStyle=1001
+2;CRRC4_2_OSC/LineColor=632,LineWidth=3,FillColor=0,FillStyle=1001
+3;CRRC4_2_COUNTER_GRAPH/LineColor=602,FillColor=632,FillStyle=1001

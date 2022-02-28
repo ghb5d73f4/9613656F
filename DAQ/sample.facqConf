@@ -1,0 +1,629 @@
+#############################################################################################
+#                                  FACQCONF EXAMPLE
+#############################################################################################
+#
+# Time conversion factor (to seconds)
+FParamCalc;ns2s_coef;[0]
+[0];1e-09
+#
+#############################################################################################
+#                                  TRAPEZ_1 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;TRAPEZ_1_SPECTRO_GRAPH;TRAPEZ_1_SPECTRO
+Condition:none
+TRAPEZ_1_ADC;3000;0;2000000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;TRAPEZ_1_pileup_condition;TRAPEZ_1_pileup==1
+# ADC satured condition
+FCondition;TRAPEZ_1_saturated_condition;TRAPEZ_1_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;TRAPEZ_1_COUNT_t_sec;TRAPEZ_1_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;TRAPEZ_1_SENT_RATE;rate of data sent by my channel
+TRAPEZ_1_SENT;TRAPEZ_1_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_1_CALC_RATE;rate of data calculated by my channel
+TRAPEZ_1_CALC;TRAPEZ_1_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_1_TRIG_RATE;rate of data triggered by my channel
+TRAPEZ_1_TRIG;TRAPEZ_1_COUNT_t_sec;1
+# Rate counters
+FHRawScale;TRAPEZ_1_COUNTER_GRAPH;TRAPEZ_1_COUNTER
+Condition :none
+TRAPEZ_1_TRIG_RATE
+TRAPEZ_1_CALC_RATE
+TRAPEZ_1_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;TRAPEZ_1_OSC;TRAPEZ_1_OSC
+Condition:none
+TRAPEZ_1_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  TRAPEZ_2 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;TRAPEZ_2_SPECTRO_GRAPH;TRAPEZ_2_SPECTRO
+Condition:none
+TRAPEZ_2_ADC;3000;0;2000000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;TRAPEZ_2_pileup_condition;TRAPEZ_2_pileup==1
+# ADC satured condition
+FCondition;TRAPEZ_2_saturated_condition;TRAPEZ_2_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;TRAPEZ_2_COUNT_t_sec;TRAPEZ_2_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;TRAPEZ_2_SENT_RATE;rate of data sent by my channel
+TRAPEZ_2_SENT;TRAPEZ_2_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_2_CALC_RATE;rate of data calculated by my channel
+TRAPEZ_2_CALC;TRAPEZ_2_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_2_TRIG_RATE;rate of data triggered by my channel
+TRAPEZ_2_TRIG;TRAPEZ_2_COUNT_t_sec;1
+# Rate counters
+FHRawScale;TRAPEZ_2_COUNTER_GRAPH;TRAPEZ_2_COUNTER
+Condition :none
+TRAPEZ_2_TRIG_RATE
+TRAPEZ_2_CALC_RATE
+TRAPEZ_2_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;TRAPEZ_2_OSC;TRAPEZ_2_OSC
+Condition:none
+TRAPEZ_2_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  CRRC4_1 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;CRRC4_1_SPECTRO_GRAPH;CRRC4_1_SPECTRO
+Condition:none
+CRRC4_1_ADC;3000;0;2000000
+#
+FH1F;CRRC4_1_MAX_DT_GRAPH;CRRC4_1_MAX_DT
+Condition:none
+CRRC4_1_max_dt;3000;0;20000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;CRRC4_1_pileup_condition;CRRC4_1_pileup==1
+# ADC satured condition
+FCondition;CRRC4_1_saturated_condition;CRRC4_1_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;CRRC4_1_COUNT_t_sec;CRRC4_1_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;CRRC4_1_SENT_RATE;rate of data sent by my channel
+CRRC4_1_SENT;CRRC4_1_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_1_CALC_RATE;rate of data calculated by my channel
+CRRC4_1_CALC;CRRC4_1_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_1_TRIG_RATE;rate of data triggered by my channel
+CRRC4_1_TRIG;CRRC4_1_COUNT_t_sec;1
+# Rate counters
+FHRawScale;CRRC4_1_COUNTER_GRAPH;CRRC4_1_COUNTER
+Condition :none
+CRRC4_1_TRIG_RATE
+CRRC4_1_CALC_RATE
+CRRC4_1_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;CRRC4_1_OSC;CRRC4_1_OSC
+Condition:none
+CRRC4_1_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  CRRC4_2 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;CRRC4_2_SPECTRO_GRAPH;CRRC4_2_SPECTRO
+Condition:none
+CRRC4_2_ADC;3000;0;2000000
+#
+FH1F;CRRC4_2_MAX_DT_GRAPH;CRRC4_2_MAX_DT
+Condition:none
+CRRC4_2_max_dt;3000;0;20000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;CRRC4_2_pileup_condition;CRRC4_2_pileup==1
+# ADC satured condition
+FCondition;CRRC4_2_saturated_condition;CRRC4_2_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;CRRC4_2_COUNT_t_sec;CRRC4_2_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;CRRC4_2_SENT_RATE;rate of data sent by my channel
+CRRC4_2_SENT;CRRC4_2_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_2_CALC_RATE;rate of data calculated by my channel
+CRRC4_2_CALC;CRRC4_2_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_2_TRIG_RATE;rate of data triggered by my channel
+CRRC4_2_TRIG;CRRC4_2_COUNT_t_sec;1
+# Rate counters
+FHRawScale;CRRC4_2_COUNTER_GRAPH;CRRC4_2_COUNTER
+Condition :none
+CRRC4_2_TRIG_RATE
+CRRC4_2_CALC_RATE
+CRRC4_2_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;CRRC4_2_OSC;CRRC4_2_OSC
+Condition:none
+CRRC4_2_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  TRAPEZ_3 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;TRAPEZ_3_SPECTRO_GRAPH;TRAPEZ_3_SPECTRO
+Condition:none
+TRAPEZ_3_ADC;3000;0;2000000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;TRAPEZ_3_pileup_condition;TRAPEZ_3_pileup==1
+# ADC satured condition
+FCondition;TRAPEZ_3_saturated_condition;TRAPEZ_3_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;TRAPEZ_3_COUNT_t_sec;TRAPEZ_3_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;TRAPEZ_3_SENT_RATE;rate of data sent by my channel
+TRAPEZ_3_SENT;TRAPEZ_3_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_3_CALC_RATE;rate of data calculated by my channel
+TRAPEZ_3_CALC;TRAPEZ_3_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_3_TRIG_RATE;rate of data triggered by my channel
+TRAPEZ_3_TRIG;TRAPEZ_3_COUNT_t_sec;1
+# Rate counters
+FHRawScale;TRAPEZ_3_COUNTER_GRAPH;TRAPEZ_3_COUNTER
+Condition :none
+TRAPEZ_3_TRIG_RATE
+TRAPEZ_3_CALC_RATE
+TRAPEZ_3_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;TRAPEZ_3_OSC;TRAPEZ_3_OSC
+Condition:none
+TRAPEZ_3_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  TRAPEZ_4 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;TRAPEZ_4_SPECTRO_GRAPH;TRAPEZ_4_SPECTRO
+Condition:none
+TRAPEZ_4_ADC;3000;0;2000000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;TRAPEZ_4_pileup_condition;TRAPEZ_4_pileup==1
+# ADC satured condition
+FCondition;TRAPEZ_4_saturated_condition;TRAPEZ_4_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;TRAPEZ_4_COUNT_t_sec;TRAPEZ_4_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;TRAPEZ_4_SENT_RATE;rate of data sent by my channel
+TRAPEZ_4_SENT;TRAPEZ_4_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_4_CALC_RATE;rate of data calculated by my channel
+TRAPEZ_4_CALC;TRAPEZ_4_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_4_TRIG_RATE;rate of data triggered by my channel
+TRAPEZ_4_TRIG;TRAPEZ_4_COUNT_t_sec;1
+# Rate counters
+FHRawScale;TRAPEZ_4_COUNTER_GRAPH;TRAPEZ_4_COUNTER
+Condition :none
+TRAPEZ_4_TRIG_RATE
+TRAPEZ_4_CALC_RATE
+TRAPEZ_4_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;TRAPEZ_4_OSC;TRAPEZ_4_OSC
+Condition:none
+TRAPEZ_4_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  TRAPEZ_5 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;TRAPEZ_5_SPECTRO_GRAPH;TRAPEZ_5_SPECTRO
+Condition:none
+TRAPEZ_5_ADC;3000;0;2000000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;TRAPEZ_5_pileup_condition;TRAPEZ_5_pileup==1
+# ADC satured condition
+FCondition;TRAPEZ_5_saturated_condition;TRAPEZ_5_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;TRAPEZ_5_COUNT_t_sec;TRAPEZ_5_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;TRAPEZ_5_SENT_RATE;rate of data sent by my channel
+TRAPEZ_5_SENT;TRAPEZ_5_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_5_CALC_RATE;rate of data calculated by my channel
+TRAPEZ_5_CALC;TRAPEZ_5_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_5_TRIG_RATE;rate of data triggered by my channel
+TRAPEZ_5_TRIG;TRAPEZ_5_COUNT_t_sec;1
+# Rate counters
+FHRawScale;TRAPEZ_5_COUNTER_GRAPH;TRAPEZ_5_COUNTER
+Condition :none
+TRAPEZ_5_TRIG_RATE
+TRAPEZ_5_CALC_RATE
+TRAPEZ_5_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;TRAPEZ_5_OSC;TRAPEZ_5_OSC
+Condition:none
+TRAPEZ_5_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  TRAPEZ_6 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;TRAPEZ_6_SPECTRO_GRAPH;TRAPEZ_6_SPECTRO
+Condition:none
+TRAPEZ_6_ADC;3000;0;2000000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;TRAPEZ_6_pileup_condition;TRAPEZ_6_pileup==1
+# ADC satured condition
+FCondition;TRAPEZ_6_saturated_condition;TRAPEZ_6_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;TRAPEZ_6_COUNT_t_sec;TRAPEZ_6_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;TRAPEZ_6_SENT_RATE;rate of data sent by my channel
+TRAPEZ_6_SENT;TRAPEZ_6_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_6_CALC_RATE;rate of data calculated by my channel
+TRAPEZ_6_CALC;TRAPEZ_6_COUNT_t_sec;1
+#
+FDiffCounter;TRAPEZ_6_TRIG_RATE;rate of data triggered by my channel
+TRAPEZ_6_TRIG;TRAPEZ_6_COUNT_t_sec;1
+# Rate counters
+FHRawScale;TRAPEZ_6_COUNTER_GRAPH;TRAPEZ_6_COUNTER
+Condition :none
+TRAPEZ_6_TRIG_RATE
+TRAPEZ_6_CALC_RATE
+TRAPEZ_6_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;TRAPEZ_6_OSC;TRAPEZ_6_OSC
+Condition:none
+TRAPEZ_6_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  CRRC4_3 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;CRRC4_3_SPECTRO_GRAPH;CRRC4_3_SPECTRO
+Condition:none
+CRRC4_3_ADC;3000;0;2000000
+#
+FH1F;CRRC4_3_MAX_DT_GRAPH;CRRC4_3_MAX_DT
+Condition:none
+CRRC4_3_max_dt;3000;0;20000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;CRRC4_3_pileup_condition;CRRC4_3_pileup==1
+# ADC satured condition
+FCondition;CRRC4_3_saturated_condition;CRRC4_3_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;CRRC4_3_COUNT_t_sec;CRRC4_3_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;CRRC4_3_SENT_RATE;rate of data sent by my channel
+CRRC4_3_SENT;CRRC4_3_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_3_CALC_RATE;rate of data calculated by my channel
+CRRC4_3_CALC;CRRC4_3_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_3_TRIG_RATE;rate of data triggered by my channel
+CRRC4_3_TRIG;CRRC4_3_COUNT_t_sec;1
+# Rate counters
+FHRawScale;CRRC4_3_COUNTER_GRAPH;CRRC4_3_COUNTER
+Condition :none
+CRRC4_3_TRIG_RATE
+CRRC4_3_CALC_RATE
+CRRC4_3_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;CRRC4_3_OSC;CRRC4_3_OSC
+Condition:none
+CRRC4_3_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  CRRC4_4 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;CRRC4_4_SPECTRO_GRAPH;CRRC4_4_SPECTRO
+Condition:none
+CRRC4_4_ADC;3000;0;2000000
+#
+FH1F;CRRC4_4_MAX_DT_GRAPH;CRRC4_4_MAX_DT
+Condition:none
+CRRC4_4_max_dt;3000;0;20000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;CRRC4_4_pileup_condition;CRRC4_4_pileup==1
+# ADC satured condition
+FCondition;CRRC4_4_saturated_condition;CRRC4_4_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;CRRC4_4_COUNT_t_sec;CRRC4_4_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;CRRC4_4_SENT_RATE;rate of data sent by my channel
+CRRC4_4_SENT;CRRC4_4_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_4_CALC_RATE;rate of data calculated by my channel
+CRRC4_4_CALC;CRRC4_4_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_4_TRIG_RATE;rate of data triggered by my channel
+CRRC4_4_TRIG;CRRC4_4_COUNT_t_sec;1
+# Rate counters
+FHRawScale;CRRC4_4_COUNTER_GRAPH;CRRC4_4_COUNTER
+Condition :none
+CRRC4_4_TRIG_RATE
+CRRC4_4_CALC_RATE
+CRRC4_4_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;CRRC4_4_OSC;CRRC4_4_OSC
+Condition:none
+CRRC4_4_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  CRRC4_5 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;CRRC4_5_SPECTRO_GRAPH;CRRC4_5_SPECTRO
+Condition:none
+CRRC4_5_ADC;3000;0;2000000
+#
+FH1F;CRRC4_5_MAX_DT_GRAPH;CRRC4_5_MAX_DT
+Condition:none
+CRRC4_5_max_dt;3000;0;20000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;CRRC4_5_pileup_condition;CRRC4_5_pileup==1
+# ADC satured condition
+FCondition;CRRC4_5_saturated_condition;CRRC4_5_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;CRRC4_5_COUNT_t_sec;CRRC4_5_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;CRRC4_5_SENT_RATE;rate of data sent by my channel
+CRRC4_5_SENT;CRRC4_5_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_5_CALC_RATE;rate of data calculated by my channel
+CRRC4_5_CALC;CRRC4_5_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_5_TRIG_RATE;rate of data triggered by my channel
+CRRC4_5_TRIG;CRRC4_5_COUNT_t_sec;1
+# Rate counters
+FHRawScale;CRRC4_5_COUNTER_GRAPH;CRRC4_5_COUNTER
+Condition :none
+CRRC4_5_TRIG_RATE
+CRRC4_5_CALC_RATE
+CRRC4_5_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;CRRC4_5_OSC;CRRC4_5_OSC
+Condition:none
+CRRC4_5_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  CRRC4_6 CHANNEL
+#############################################################################################
+#
+#
+# RAW PARAMETER DECLARATION :
+#
+#
+# RAW SPECTRA DECLARATION
+#
+FH1F;CRRC4_6_SPECTRO_GRAPH;CRRC4_6_SPECTRO
+Condition:none
+CRRC4_6_ADC;3000;0;2000000
+#
+FH1F;CRRC4_6_MAX_DT_GRAPH;CRRC4_6_MAX_DT
+Condition:none
+CRRC4_6_max_dt;3000;0;20000
+#
+# CONDITIONS
+#
+# ADC pileup condition
+FCondition;CRRC4_6_pileup_condition;CRRC4_6_pileup==1
+# ADC satured condition
+FCondition;CRRC4_6_saturated_condition;CRRC4_6_saturated==1
+#
+# COUNTER DECLARATION :
+#
+# Converted counter timestamp
+FParamCalc;CRRC4_6_COUNT_t_sec;CRRC4_6_COUNT_t*ns2s_coef
+# Rate computations
+FDiffCounter;CRRC4_6_SENT_RATE;rate of data sent by my channel
+CRRC4_6_SENT;CRRC4_6_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_6_CALC_RATE;rate of data calculated by my channel
+CRRC4_6_CALC;CRRC4_6_COUNT_t_sec;1
+#
+FDiffCounter;CRRC4_6_TRIG_RATE;rate of data triggered by my channel
+CRRC4_6_TRIG;CRRC4_6_COUNT_t_sec;1
+# Rate counters
+FHRawScale;CRRC4_6_COUNTER_GRAPH;CRRC4_6_COUNTER
+Condition :none
+CRRC4_6_TRIG_RATE
+CRRC4_6_CALC_RATE
+CRRC4_6_SENT_RATE
+--> EndOfList <--
+#
+# OSCILLOSCOPE DECLARATION :
+#
+FOscilloH1F;CRRC4_6_OSC;CRRC4_6_OSC
+Condition:none
+CRRC4_6_OSC;704;-200;1500
+#
+#############################################################################################
+#                                  ALL COUNTERS
+#############################################################################################
+#
+#
+# Rate of all counters
+FHRawScale;ALL_COUNTERS_GRAPH;ALL_COUNTERS
+Condition :none
+TRAPEZ_1_SENT_RATE
+TRAPEZ_2_SENT_RATE
+CRRC4_1_SENT_RATE
+CRRC4_2_SENT_RATE
+TRAPEZ_3_SENT_RATE
+TRAPEZ_4_SENT_RATE
+TRAPEZ_5_SENT_RATE
+TRAPEZ_6_SENT_RATE
+CRRC4_3_SENT_RATE
+CRRC4_4_SENT_RATE
+CRRC4_5_SENT_RATE
+CRRC4_6_SENT_RATE
+--> EndOfList <--

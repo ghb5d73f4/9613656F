@@ -1,0 +1,15 @@
+AutoStart: true
+SaveHistos: false
+
+ConfigFile: sample.facqConf
+
+RHV.ConfigFile: sample.rhvConf
+RHV.WithOscillograms: true
+RHV.WithEditor: true
+
+DataReader: FIPFasterDataReader
+FFasterDataReader.ParamDescFile: sample.pid
+Device: FIPDevice
+FIPDevice.Protocol: UDP
+FIPDevice.Server: localhost
+FIPDevice.Port: 6666
