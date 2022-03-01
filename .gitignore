@@ -1,2 +1,4 @@
 token
 data/*.fast
+histos/*/*-delay*
+histos/*/*.h2.txt
