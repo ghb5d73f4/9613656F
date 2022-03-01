@@ -1,5 +1,5 @@
-cython
 numpy
 matplotlib
+scipy
 pyhisto
-scipy 
+
