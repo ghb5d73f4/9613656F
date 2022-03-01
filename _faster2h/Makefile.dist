@@ -1,0 +1,6 @@
+dist: faster2h.tar.gz
+	
+
+faster2h.tar.gz: src/* AUTHORS LICENSE fasterac/* Makefile Makefile.* README.md etc/* bin/empty.null lib/empty.null 
+	tar -cvvzf $@ $^
+    

@@ -1,0 +1,2 @@
+lib/TConf.o: src/TConf.cpp src/TConf.h
+	 g++ src/TConf.cpp -c -I-I./src -I./src/fasterlib -O3 -Wall -g -std=c++11  -o lib/TConf.o

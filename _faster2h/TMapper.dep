@@ -1,0 +1,2 @@
+lib/TMapper.o: src/TMapper.cpp src/TMapper.h
+	 g++ src/TMapper.cpp -c -I-I./src -I./src/fasterlib -O3 -Wall -g -std=c++11  -o lib/TMapper.o

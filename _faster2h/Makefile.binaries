@@ -1,0 +1,7 @@
+HOSTNAME := $(shell hostname)
+
+binaries: bin/faster2h.$(HOSTNAME)
+
+bin/faster2h.$(HOSTNAME): $(OBJS)
+	$(CXX)  -o $@ $^ $(LDFLAGS)  $(LIBS)
+

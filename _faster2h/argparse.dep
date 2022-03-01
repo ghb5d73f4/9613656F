@@ -1,0 +1,2 @@
+lib/argparse.o: src/argparse.cpp src/argparse.h
+	 g++ src/argparse.cpp -c -I-I./src -I./src/fasterlib -O3 -Wall -g -std=c++11  -o lib/argparse.o

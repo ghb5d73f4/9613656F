@@ -1,0 +1,2 @@
+lib/THisto2D.o: src/THisto2D.cpp src/THisto2D.h
+	 g++ src/THisto2D.cpp -c -I-I./src -I./src/fasterlib -O3 -Wall -g -std=c++11  -o lib/THisto2D.o

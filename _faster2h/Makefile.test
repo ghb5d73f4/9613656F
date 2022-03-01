@@ -1,0 +1,38 @@
+# -*- file: Makefile -*-
+# -*- type: Makefile -*-
+# -*- coding: utf-8 -*-
+
+
+HISTOGRAMS:=$(shell grep -v  "\#"  etc/the.map | rev | cut -d " " -f1  | rev | awk NF | while read line; do echo output/$$line.h1.txt; done ) \
+	$(shell grep -v  "\#"  etc/the.map | rev | cut -d " " -f1  | rev | awk NF | while read line; do echo output/$$line"_clean.h1.txt"; done ) \
+	$(shell grep -v  "\#"  etc/the.map | rev | cut -d " " -f1  | rev | awk NF | while read line; do echo output/$$line-delay.h1.txt; done ) \
+	$(shell grep -v  "\#"  etc/the.map | rev | cut -d " " -f1  | rev | awk NF | while read line; do echo output/$$line-delay_clean.h1.txt; done ) \
+	$(shell grep -v  "\#"  etc/the.map | rev | cut -d " " -f1  | rev | awk NF | while read line; do echo output/$$line".h2.txt"; done ) \
+	$(shell grep -v  "\#"  etc/the.map | rev | cut -d " " -f1  | rev | awk NF | while read line; do echo output/$$line"_clean.h2.txt"; done ) \
+	output/channel_distribution_all.h1.txt \
+	output/channel_distribution_clean.h1.txt
+
+.PRECIOUS: $(HISTOGRAMS)
+
+ifneq (, $(shell command -v gnuplot))
+    IMAGES:=$(patsubst %.txt,%.txt.png,$(HISTOGRAMS))
+else
+    IMAGES:=$(HISTOGRAMS)
+endif
+
+test: $(IMAGES)
+	ls -lh output/*
+	-@echo "done"
+
+output/%.txt: bin/faster2h.$(HOSTNAME) etc/the.map etc/the.config 
+	$^ --input=data/test_0001.fast --map=etc/the.map --conf=etc/the.config
+
+output/%.h2.txt.png: output/%.h2.txt
+	gnuplot -e "set term pngcairo enhanced color solid font ',14' size 32cm,26cm; set output '$@'; set pm3d at s; set dgrid3d 350,125; set view map; set palette gray; splot '$^' with pm3d t ''"
+
+output/%.h1.txt.png: output/%.h1.txt
+	# making plots (if gnuplot is here)
+	gnuplot -e "set grid; set term pngcairo enhanced color solid font ',14' size 32cm,18cm; set output '$@' ; plot '$^' using 1:3 with histeps t ''"
+	
+output/empty.null:
+	-@touch $@

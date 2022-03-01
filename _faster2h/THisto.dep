@@ -1,0 +1,2 @@
+lib/THisto.o: src/THisto.cpp src/THisto.h
+	 g++ src/THisto.cpp -c -I-I./src -I./src/fasterlib -O3 -Wall -g -std=c++11  -o lib/THisto.o

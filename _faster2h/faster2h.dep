@@ -1,0 +1,8 @@
+lib/faster2h.o: src/faster2h.cpp src/faster2h.h src/TMapper.h \
+ src/argparse.h src/TConf.h src/THisto.h src/THisto2D.h \
+ src/fasterlib/fasterac/fasterac.h src/fasterlib/fasterac/fast_data.h \
+ src/fasterlib/fasterac/spectro.h src/fasterlib/fasterac/utils.h \
+ src/get_faster_event.h src/parseflags.inc.cxx \
+ src/createengineobjects.inc.cxx src/createhisto.inc.cxx \
+ src/readingloop.inc.cxx src/closingstatements.inc.cxx
+	 g++ src/faster2h.cpp -c -I-I./src -I./src/fasterlib -O3 -Wall -g -std=c++11  -o lib/faster2h.o
