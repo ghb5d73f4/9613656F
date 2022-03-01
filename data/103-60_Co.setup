@@ -1,9 +1,9 @@
 
 -*- file info
 - data output directory : /home/fasxb/LaBr3/DAQ/../data
-- file prefix           : /home/fasxb/LaBr3/data/103-Bruit_de_fond
-- report file           : /home/fasxb/LaBr3/data/103-Bruit_de_fond.setup
-- data file             : /home/fasxb/LaBr3/data/103-Bruit_de_fond_0001.fast
+- file prefix           : /home/fasxb/LaBr3/data/103-60_Co
+- report file           : /home/fasxb/LaBr3/data/103-60_Co.setup
+- data file             : /home/fasxb/LaBr3/data/103-60_Co_0001.fast
 
 -*- user provided info
 None
@@ -243,72 +243,4 @@ Oscillo_Label            = 2008
 
 -*- t0 for this run
 YES : t0 was required by user
-
-- Event count  : 2372386136
-- Start date   : 01-03-2022 12:06:19
-- Stop date    : 01-03-2022 15:54:21
-
--*- trunk configuration and statistics
-Basic_Trunk.Group_Coinc Image
------------------------------
-Input  1 :
---------
-UDP Input :
-  From IP       = 192.168.2.185
-  From Node Num = 3
-  Local port    = 20002
-Trame Input 1 :
-  Trame capacity = 30000
-  Filling max    = 0.1 %
-  Cur filling    = 0.0 %
-  Fmin           = 1.00000E-01 Hz
-  Nb_Passed      = 2440707
-  Missed count   = 0
-
-Input  2 :
---------
-UDP Input :
-  From IP       = 192.168.2.179
-  From Node Num = 3
-  Local port    = 20001
-Trame Input 2 :
-  Trame capacity = 30000
-  Filling max    = 0.1 %
-  Cur filling    = 0.0 %
-  Fmin           = 1.00000E-01 Hz
-  Nb_Passed      = 0
-  Missed count   = 0
-
-Synchro : 
-----------
-
-Trigger-Merger
---------------
-Group_Coinc_V2 :
-----------------
-Trigger_Type                =  BOOLEAN_EXPRESSION_TRIGGER
-Trigger_Enabled             =  FALSE
-Merger_Lossless             =  FALSE
-Trigger_Window_ns           =  50.0
-Before_Window_ns            =  50.0
-After_Window_ns             =  50.0
-Group_Label                 =  3000
-Boolean_Expression_Trigger  =  
-Multiplicity_Trigger_Labels =  
-Multiplicity_Trigger_Value  =  1
-Multiplicity_Trigger_Type   =  AT_LEAST
-Followers                   = 
-Valid_Labels                = NO_CONSTRAINT
-
-Data Fifo Filling max = 0.0 %
-Win  Fifo Filling max = 0.0 %
-
-Storage :
----------
-  Data capacity   = 1000000
-  Filling max     = 0.0 %
-  Cur. Filling    = 0.0 %
-  Cur. File    CF = /home/fasxb/LaBr3/data/103-Bruit_de_fond_0001.fast
-  Nb_Written (CF) = 2440707
-
 
