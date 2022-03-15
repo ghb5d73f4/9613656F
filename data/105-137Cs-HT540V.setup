@@ -1,27 +1,22 @@
-[Node]
-IP_Address          = 192.168.2.185
-Node_Number         =  1
-Fmin                =  1.00000E+03
-Data_Mac_Address    = 00:22:8F:01:02:B9
-Data_IP_Address     = 192.168.2.185
-Data_Udp_Port       =  50000
-Intro_Mac_Address   = B4:96:91:5E:0C:A1
-Intro_IP_Address    = 192.168.0.1
-Intro_Udp_Port      =  6666
-State_Mac_Address   = B4:96:91:5E:0C:A1
-State_IP_Address    = 192.168.0.1
-State_Udp_Port      =  7890
-Trigger_Mac_Address = 00:00:00:00:00:00
-Trigger_IP_Address  = 0.0.0.0
-Trigger_Udp_Port    =  0
 
-[Mosahr]
-Range_Input_SMB_1     = S1S2_ONOFF_1V
-Range_Input_SMB_2     = S1S2_ONON_5V
-Range_Input_SMB_3     = S1S2_ONON_5V
-Range_Input_SMB_4     = S1S2_ONON_5V
+-*- file info
+- data output directory : /home/fasxb/LaBr3/DAQ/../data
+- file prefix           : /home/fasxb/LaBr3/data/105-137Cs-HT540V
+- report file           : /home/fasxb/LaBr3/data/105-137Cs-HT540V.setup
+- data file             : /home/fasxb/LaBr3/data/105-137Cs-HT540V_0001.fast
 
-[Channel1]
+-*- user provided info
+None
+
+-*- channel groups states
+Channels : ON
+caras_crrc4 : OFF
+caras_trapez : OFF
+mosahr_crrc4 : OFF
+mosahr_trapez : ON
+
+-*- channels configuration
+: TRAPEZ_3 is part of mosahr_trapez
 Channel_Enabled          = TRUE
 #
 Preamplifier_T_ns        = 65269
@@ -77,8 +72,8 @@ DSP_Label                = 5
 Counter_Label            = 1005
 Oscillo_Label            = 2005
 
-[Channel2]
-Channel_Enabled          = TRUE
+: TRAPEZ_4 is part of mosahr_trapez
+Channel_Enabled          = FALSE
 #
 Preamplifier_T_ns        = 10000
 Channel_Input            = MOSAHR_SMB_2
@@ -128,13 +123,13 @@ Counter_Rate             = COUNTER_RATE_10HZ
 Oscillo_Rate             = OSCILLO_RATE_1HZ
 DSP_Enabled              = TRUE
 Counter_Enabled          = TRUE
-Oscillo_Enabled          = TRUE
+Oscillo_Enabled          = FALSE
 DSP_Label                = 6
 Counter_Label            = 1006
 Oscillo_Label            = 2006
 
-[Channel3]
-Channel_Enabled          = TRUE
+: TRAPEZ_5 is part of mosahr_trapez
+Channel_Enabled          = FALSE
 #
 Preamplifier_T_ns        = 10000
 Channel_Input            = MOSAHR_SMB_3
@@ -184,13 +179,13 @@ Counter_Rate             = COUNTER_RATE_10HZ
 Oscillo_Rate             = OSCILLO_RATE_1HZ
 DSP_Enabled              = TRUE
 Counter_Enabled          = TRUE
-Oscillo_Enabled          = TRUE
+Oscillo_Enabled          = FALSE
 DSP_Label                = 7
 Counter_Label            = 1007
 Oscillo_Label            = 2007
 
-[Channel4]
-Channel_Enabled          = TRUE
+: TRAPEZ_6 is part of mosahr_trapez
+Channel_Enabled          = FALSE
 #
 Preamplifier_T_ns        = 10000
 Channel_Input            = MOSAHR_SMB_4
@@ -240,7 +235,80 @@ Counter_Rate             = COUNTER_RATE_10HZ
 Oscillo_Rate             = OSCILLO_RATE_1HZ
 DSP_Enabled              = TRUE
 Counter_Enabled          = TRUE
-Oscillo_Enabled          = TRUE
+Oscillo_Enabled          = FALSE
 DSP_Label                = 8
 Counter_Label            = 1008
 Oscillo_Label            = 2008
+
+
+-*- t0 for this run
+YES : t0 was required by user
+
+- Event count  : 671809112
+- Start date   : 15-03-2022 15:53:03
+- Stop date    : 15-03-2022 16:03:03
+
+-*- trunk configuration and statistics
+Basic_Trunk.Group_Coinc Image
+-----------------------------
+Input  1 :
+--------
+UDP Input :
+  From IP       = 192.168.2.185
+  From Node Num = 3
+  Local port    = 20002
+Trame Input 1 :
+  Trame capacity = 30000
+  Filling max    = 0.0 %
+  Cur filling    = 0.0 %
+  Fmin           = 1.00000E-01 Hz
+  Nb_Passed      = 430404
+  Missed count   = 0
+
+Input  2 :
+--------
+UDP Input :
+  From IP       = 192.168.2.179
+  From Node Num = 3
+  Local port    = 20001
+Trame Input 2 :
+  Trame capacity = 30000
+  Filling max    = 0.0 %
+  Cur filling    = 0.0 %
+  Fmin           = 1.00000E-01 Hz
+  Nb_Passed      = 0
+  Missed count   = 0
+
+Synchro : 
+----------
+
+Trigger-Merger
+--------------
+Group_Coinc_V2 :
+----------------
+Trigger_Type                =  BOOLEAN_EXPRESSION_TRIGGER
+Trigger_Enabled             =  FALSE
+Merger_Lossless             =  FALSE
+Trigger_Window_ns           =  50.0
+Before_Window_ns            =  50.0
+After_Window_ns             =  50.0
+Group_Label                 =  3000
+Boolean_Expression_Trigger  =  
+Multiplicity_Trigger_Labels =  
+Multiplicity_Trigger_Value  =  1
+Multiplicity_Trigger_Type   =  AT_LEAST
+Followers                   = 
+Valid_Labels                = NO_CONSTRAINT
+
+Data Fifo Filling max = 0.0 %
+Win  Fifo Filling max = 0.0 %
+
+Storage :
+---------
+  Data capacity   = 1000000
+  Filling max     = 0.0 %
+  Cur. Filling    = 0.0 %
+  Cur. File    CF = /home/fasxb/LaBr3/data/105-137Cs-HT540V_0001.fast
+  Nb_Written (CF) = 430404
+
+
