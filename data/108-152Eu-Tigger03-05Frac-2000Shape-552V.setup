@@ -1,0 +1,314 @@
+
+-*- file info
+- data output directory : /home/fasxb/LaBr3/DAQ/../data
+- file prefix           : /home/fasxb/LaBr3/data/108-152Eu-Tigger03-05Frac-2000Shape-552V
+- report file           : /home/fasxb/LaBr3/data/108-152Eu-Tigger03-05Frac-2000Shape-552V.setup
+- data file             : /home/fasxb/LaBr3/data/108-152Eu-Tigger03-05Frac-2000Shape-552V_0001.fast
+
+-*- user provided info
+None
+
+-*- channel groups states
+Channels : ON
+caras_crrc4 : OFF
+caras_trapez : OFF
+mosahr_crrc4 : OFF
+mosahr_trapez : ON
+
+-*- channels configuration
+: TRAPEZ_3 is part of mosahr_trapez
+Channel_Enabled          = TRUE
+#
+Preamplifier_T_ns        = 65269
+Channel_Input            = MOSAHR_SMB_1
+Input_Inverter           = FALSE
+Raw_Signal_Baseline_mV   =-1.40000E+01
+#
+Fast_Shaping_Time        = SHAPING_TIME_60
+Fast_Trapezoid_Sides_ns  =  88
+Fast_Trapezoid_Top_ns    =  24
+Out_Shaping_Time         = SHAPING_TIME_2000
+Out_Trapezoid_Sides_ns   =  3920
+Out_Trapezoid_Top_ns     =  880
+#
+BLR_Dynamic_Type         = TRUE
+BLR_Dyn_Threshold_mV     = 8.00000E-01
+BLR_Dyn_Frequency_High   = FALSE
+Fast_BLR_Freeze_ns       =  280
+Fast_BLR_Freeze_Auto     = TRUE
+Out_BLR_Freeze_ns        =  8800
+Out_BLR_Freeze_Auto      = TRUE
+#
+Trigger_Input            = TRIG_CPZ_BLR_FASTOUT
+Trigger_Type             = TRIGGER_CFD
+Trigger_Inhibit_Delay_ns =  8
+Trigger_Threshold_mV     = 3.00000E-01
+Trigger_Width_ns         = TRIGGER_WIDTH_32
+Trigger_CFD_Fraction     = CFD_FRAC_HALF
+Trigger_CFD_Delay_ns     = 32
+#
+TDC_Type                 = TDC_ORDER2_3PTS
+CFD_DSP_Delay_ns         = 0
+Peak_Hold_Auto           = TRUE
+Peak_Hold_From_ns        = 4360
+Peak_Hold_To_ns          = 4800
+DSP_Width_ns             = 8800
+DSP_Width_Auto           = TRUE
+#
+Oscillo_Input            = OSC_TRIGGER_INPUT
+Oscillo_Without_Trig     = FALSE
+Oscillo_Zoom             = OSC_ZOOM_X1
+Oscillo_Decimation       = OSC_DECIM_4
+Oscillo_Nb_Points_Width  =  700
+Oscillo_Nb_Points_Shift  =  200
+#
+DSP_Flow_Divider         = DSP_FLOW_DIV_1
+Counter_Rate             = COUNTER_RATE_1HZ
+Oscillo_Rate             = OSCILLO_RATE_1HZ
+DSP_Enabled              = TRUE
+Counter_Enabled          = TRUE
+Oscillo_Enabled          = TRUE
+DSP_Label                = 5
+Counter_Label            = 1005
+Oscillo_Label            = 2005
+
+: TRAPEZ_4 is part of mosahr_trapez
+Channel_Enabled          = FALSE
+#
+Preamplifier_T_ns        = 10000
+Channel_Input            = MOSAHR_SMB_2
+Input_Inverter           = FALSE
+Raw_Signal_Baseline_mV   = 0.00000E+00
+#
+Fast_Shaping_Time        = SHAPING_TIME_60
+Fast_Trapezoid_Sides_ns  =  88
+Fast_Trapezoid_Top_ns    =  24
+Out_Shaping_Time         = SHAPING_TIME_2000
+Out_Trapezoid_Sides_ns   =  3920
+Out_Trapezoid_Top_ns     =  880
+#
+BLR_Dynamic_Type         = TRUE
+BLR_Dyn_Threshold_mV     = 5.00000E+00
+BLR_Dyn_Frequency_High   = FALSE
+Fast_BLR_Freeze_ns       =  280
+Fast_BLR_Freeze_Auto     = TRUE
+Out_BLR_Freeze_ns        =  8800
+Out_BLR_Freeze_Auto      = TRUE
+#
+Trigger_Input            = TRIG_CPZ_BLR_FASTOUT
+Trigger_Type             = TRIGGER_THR
+Trigger_Inhibit_Delay_ns =  8
+Trigger_Threshold_mV     = 5.00000E+00
+Trigger_Width_ns         = TRIGGER_WIDTH_8
+Trigger_CFD_Fraction     = CFD_FRAC_HALF
+Trigger_CFD_Delay_ns     = 8
+#
+TDC_Type                 = TDC_ORDER2_3PTS
+CFD_DSP_Delay_ns         = 0
+Peak_Hold_Auto           = TRUE
+Peak_Hold_From_ns        = 4360
+Peak_Hold_To_ns          = 4800
+DSP_Width_ns             = 8800
+DSP_Width_Auto           = TRUE
+#
+Oscillo_Input            = OSC_RAW_SIGNAL
+Oscillo_Without_Trig     = FALSE
+Oscillo_Zoom             = OSC_ZOOM_X1
+Oscillo_Decimation       = OSC_DECIM_1
+Oscillo_Nb_Points_Width  =  700
+Oscillo_Nb_Points_Shift  =  200
+#
+DSP_Flow_Divider         = DSP_FLOW_DIV_1
+Counter_Rate             = COUNTER_RATE_10HZ
+Oscillo_Rate             = OSCILLO_RATE_1HZ
+DSP_Enabled              = TRUE
+Counter_Enabled          = TRUE
+Oscillo_Enabled          = FALSE
+DSP_Label                = 6
+Counter_Label            = 1006
+Oscillo_Label            = 2006
+
+: TRAPEZ_5 is part of mosahr_trapez
+Channel_Enabled          = FALSE
+#
+Preamplifier_T_ns        = 10000
+Channel_Input            = MOSAHR_SMB_3
+Input_Inverter           = FALSE
+Raw_Signal_Baseline_mV   = 0.00000E+00
+#
+Fast_Shaping_Time        = SHAPING_TIME_60
+Fast_Trapezoid_Sides_ns  =  88
+Fast_Trapezoid_Top_ns    =  24
+Out_Shaping_Time         = SHAPING_TIME_2000
+Out_Trapezoid_Sides_ns   =  3920
+Out_Trapezoid_Top_ns     =  880
+#
+BLR_Dynamic_Type         = TRUE
+BLR_Dyn_Threshold_mV     = 5.00000E+00
+BLR_Dyn_Frequency_High   = FALSE
+Fast_BLR_Freeze_ns       =  280
+Fast_BLR_Freeze_Auto     = TRUE
+Out_BLR_Freeze_ns        =  8800
+Out_BLR_Freeze_Auto      = TRUE
+#
+Trigger_Input            = TRIG_CPZ_BLR_FASTOUT
+Trigger_Type             = TRIGGER_THR
+Trigger_Inhibit_Delay_ns =  8
+Trigger_Threshold_mV     = 5.00000E+00
+Trigger_Width_ns         = TRIGGER_WIDTH_8
+Trigger_CFD_Fraction     = CFD_FRAC_HALF
+Trigger_CFD_Delay_ns     = 8
+#
+TDC_Type                 = TDC_ORDER2_3PTS
+CFD_DSP_Delay_ns         = 0
+Peak_Hold_Auto           = TRUE
+Peak_Hold_From_ns        = 4360
+Peak_Hold_To_ns          = 4800
+DSP_Width_ns             = 8800
+DSP_Width_Auto           = TRUE
+#
+Oscillo_Input            = OSC_RAW_SIGNAL
+Oscillo_Without_Trig     = FALSE
+Oscillo_Zoom             = OSC_ZOOM_X1
+Oscillo_Decimation       = OSC_DECIM_1
+Oscillo_Nb_Points_Width  =  700
+Oscillo_Nb_Points_Shift  =  200
+#
+DSP_Flow_Divider         = DSP_FLOW_DIV_1
+Counter_Rate             = COUNTER_RATE_10HZ
+Oscillo_Rate             = OSCILLO_RATE_1HZ
+DSP_Enabled              = TRUE
+Counter_Enabled          = TRUE
+Oscillo_Enabled          = FALSE
+DSP_Label                = 7
+Counter_Label            = 1007
+Oscillo_Label            = 2007
+
+: TRAPEZ_6 is part of mosahr_trapez
+Channel_Enabled          = FALSE
+#
+Preamplifier_T_ns        = 10000
+Channel_Input            = MOSAHR_SMB_4
+Input_Inverter           = FALSE
+Raw_Signal_Baseline_mV   = 0.00000E+00
+#
+Fast_Shaping_Time        = SHAPING_TIME_60
+Fast_Trapezoid_Sides_ns  =  88
+Fast_Trapezoid_Top_ns    =  24
+Out_Shaping_Time         = SHAPING_TIME_2000
+Out_Trapezoid_Sides_ns   =  3920
+Out_Trapezoid_Top_ns     =  880
+#
+BLR_Dynamic_Type         = TRUE
+BLR_Dyn_Threshold_mV     = 5.00000E+00
+BLR_Dyn_Frequency_High   = FALSE
+Fast_BLR_Freeze_ns       =  280
+Fast_BLR_Freeze_Auto     = TRUE
+Out_BLR_Freeze_ns        =  8800
+Out_BLR_Freeze_Auto      = TRUE
+#
+Trigger_Input            = TRIG_CPZ_BLR_FASTOUT
+Trigger_Type             = TRIGGER_THR
+Trigger_Inhibit_Delay_ns =  8
+Trigger_Threshold_mV     = 5.00000E+00
+Trigger_Width_ns         = TRIGGER_WIDTH_8
+Trigger_CFD_Fraction     = CFD_FRAC_HALF
+Trigger_CFD_Delay_ns     = 8
+#
+TDC_Type                 = TDC_ORDER2_3PTS
+CFD_DSP_Delay_ns         = 0
+Peak_Hold_Auto           = TRUE
+Peak_Hold_From_ns        = 4360
+Peak_Hold_To_ns          = 4800
+DSP_Width_ns             = 8800
+DSP_Width_Auto           = TRUE
+#
+Oscillo_Input            = OSC_RAW_SIGNAL
+Oscillo_Without_Trig     = FALSE
+Oscillo_Zoom             = OSC_ZOOM_X1
+Oscillo_Decimation       = OSC_DECIM_1
+Oscillo_Nb_Points_Width  =  700
+Oscillo_Nb_Points_Shift  =  200
+#
+DSP_Flow_Divider         = DSP_FLOW_DIV_1
+Counter_Rate             = COUNTER_RATE_10HZ
+Oscillo_Rate             = OSCILLO_RATE_1HZ
+DSP_Enabled              = TRUE
+Counter_Enabled          = TRUE
+Oscillo_Enabled          = FALSE
+DSP_Label                = 8
+Counter_Label            = 1008
+Oscillo_Label            = 2008
+
+
+-*- t0 for this run
+YES : t0 was required by user
+
+- Event count  : 0
+- Start date   : 16-03-2022 16:13:31
+- Stop date    : 16-03-2022 16:23:32
+
+-*- trunk configuration and statistics
+Basic_Trunk.Group_Coinc Image
+-----------------------------
+Input  1 :
+--------
+UDP Input :
+  From IP       = 192.168.2.185
+  From Node Num = 3
+  Local port    = 20002
+Trame Input 1 :
+  Trame capacity = 30000
+  Filling max    = 0.0 %
+  Cur filling    = 0.0 %
+  Fmin           = 1.00000E-01 Hz
+  Nb_Passed      = 774315
+  Missed count   = 0
+
+Input  2 :
+--------
+UDP Input :
+  From IP       = 192.168.2.179
+  From Node Num = 3
+  Local port    = 20001
+Trame Input 2 :
+  Trame capacity = 30000
+  Filling max    = 0.0 %
+  Cur filling    = 0.0 %
+  Fmin           = 1.00000E-01 Hz
+  Nb_Passed      = 0
+  Missed count   = 0
+
+Synchro : 
+----------
+
+Trigger-Merger
+--------------
+Group_Coinc_V2 :
+----------------
+Trigger_Type                =  BOOLEAN_EXPRESSION_TRIGGER
+Trigger_Enabled             =  FALSE
+Merger_Lossless             =  FALSE
+Trigger_Window_ns           =  50.0
+Before_Window_ns            =  50.0
+After_Window_ns             =  50.0
+Group_Label                 =  3000
+Boolean_Expression_Trigger  =  
+Multiplicity_Trigger_Labels =  
+Multiplicity_Trigger_Value  =  1
+Multiplicity_Trigger_Type   =  AT_LEAST
+Followers                   = 
+Valid_Labels                = NO_CONSTRAINT
+
+Data Fifo Filling max = 0.0 %
+Win  Fifo Filling max = 0.0 %
+
+Storage :
+---------
+  Data capacity   = 1000000
+  Filling max     = 0.0 %
+  Cur. Filling    = 0.0 %
+  Cur. File    CF = /home/fasxb/LaBr3/data/108-152Eu-Tigger03-05Frac-2000Shape-552V_0001.fast
+  Nb_Written (CF) = 774315
+
+
