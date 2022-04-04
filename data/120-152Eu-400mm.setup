@@ -1,9 +1,9 @@
 
 -*- file info
 - data output directory : /home/fasxb/LaBr3/DAQ/../data
-- file prefix           : /home/fasxb/LaBr3/data/119-152Eu-170mm
-- report file           : /home/fasxb/LaBr3/data/119-152Eu-170mm.setup
-- data file             : /home/fasxb/LaBr3/data/119-152Eu-170mm_0001.fast
+- file prefix           : /home/fasxb/LaBr3/data/120-152Eu-400mm
+- report file           : /home/fasxb/LaBr3/data/120-152Eu-400mm.setup
+- data file             : /home/fasxb/LaBr3/data/120-152Eu-400mm_0001.fast
 
 -*- user provided info
 None
@@ -245,8 +245,8 @@ Oscillo_Label            = 2008
 YES : t0 was required by user
 
 - Event count  : 2920773360
-- Start date   : 01-04-2022 13:58:15
-- Stop date    : 01-04-2022 16:11:53
+- Start date   : 01-04-2022 16:13:39
+- Stop date    : 04-04-2022 08:58:04
 
 -*- trunk configuration and statistics
 Basic_Trunk.Group_Coinc Image
@@ -262,7 +262,7 @@ Trame Input 1 :
   Filling max    = 0.1 %
   Cur filling    = 0.0 %
   Fmin           = 1.00000E-01 Hz
-  Nb_Passed      = 2201980
+  Nb_Passed      = 40629871
   Missed count   = 0
 
 Input  2 :
@@ -308,7 +308,7 @@ Storage :
   Data capacity   = 1000000
   Filling max     = 0.0 %
   Cur. Filling    = 0.0 %
-  Cur. File    CF = /home/fasxb/LaBr3/data/119-152Eu-170mm_0001.fast
-  Nb_Written (CF) = 2201980
+  Cur. File    CF = /home/fasxb/LaBr3/data/120-152Eu-400mm_0001.fast
+  Nb_Written (CF) = 40629871
 
 
