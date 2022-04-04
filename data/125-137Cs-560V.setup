@@ -1,9 +1,9 @@
 
 -*- file info
 - data output directory : /home/fasxb/LaBr3/DAQ/../data
-- file prefix           : /home/fasxb/LaBr3/data/121-bruitdefond
-- report file           : /home/fasxb/LaBr3/data/121-bruitdefond.setup
-- data file             : /home/fasxb/LaBr3/data/121-bruitdefond_0001.fast
+- file prefix           : /home/fasxb/LaBr3/data/125-137Cs-560V
+- report file           : /home/fasxb/LaBr3/data/125-137Cs-560V.setup
+- data file             : /home/fasxb/LaBr3/data/125-137Cs-560V_0001.fast
 
 -*- user provided info
 None
@@ -245,8 +245,8 @@ Oscillo_Label            = 2008
 YES : t0 was required by user
 
 - Event count  : 2920773360
-- Start date   : 04-04-2022 08:58:38
-- Stop date    : 04-04-2022 10:38:13
+- Start date   : 04-04-2022 11:27:51
+- Stop date    : 04-04-2022 11:29:32
 
 -*- trunk configuration and statistics
 Basic_Trunk.Group_Coinc Image
@@ -262,7 +262,7 @@ Trame Input 1 :
   Filling max    = 0.1 %
   Cur filling    = 0.0 %
   Fmin           = 1.00000E-01 Hz
-  Nb_Passed      = 860304
+  Nb_Passed      = 47239
   Missed count   = 0
 
 Input  2 :
@@ -308,7 +308,7 @@ Storage :
   Data capacity   = 1000000
   Filling max     = 0.0 %
   Cur. Filling    = 0.0 %
-  Cur. File    CF = /home/fasxb/LaBr3/data/121-bruitdefond_0001.fast
-  Nb_Written (CF) = 860304
+  Cur. File    CF = /home/fasxb/LaBr3/data/125-137Cs-560V_0001.fast
+  Nb_Written (CF) = 47239
 
 
